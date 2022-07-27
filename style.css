@@ -5,10 +5,10 @@ body {
     display: flex;
     font-size: 1rem;
     min-height: 100vh;  /*100段階に分ける*/
-    width: 850px;
+    width: auto;
 }
 main {
-    width: 800px;
+    width: auto;
     margin: 0 auto;    /*真ん中に寄る*/
  
     
