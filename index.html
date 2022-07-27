@@ -1,0 +1,255 @@
+<!DOCTYPE html>   <!--2021_5_27up-->
+<html  lang="ja">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- ビューポート（viewport）とは、表示サイズのこと スマホ向け -->  
+   <meta name="google-site-verification" content="DJvMCprGtLkFXUDdf0QfDNKW8jax_P1dhFuBHp3Rfg4" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <link rel="stylesheet" href="style.css"> 
+   <style>
+      #canape-button {
+      width: 100px;
+      height: 27px;
+      font-size: 14px;
+      background-color: #0000CC;
+      font-family: cursive; 
+      color: #ffff80;
+      border-style: solid;
+      border-color: #ffff80;
+      border-width: 2px;
+      border-radius: 8px;
+      }
+</style>
+   <title>HTMLの表組み</title>
+  <base href="https://canape2020.stars.ne.jp" target="_self"><!--https://github.com/lightsound/html-css-class/tree/master/003_Sidebar-->
+</head>
+ <body style="background-color: #ccc;">
+   
+   <!--burg-->
+        <input id="menu" type="checkbox" />
+        <label for="menu" class="open"><img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test"><!-- href="">-->
+            &emsp;上のメニューで開く</a></label> <!--<b>&emsp;?</b>-->
+        <label for="menu" class="back" ></label> 
+ 
+  <aside style="height: auto; background-color: lightblue;">　<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^＾隠れているasieファイル＾^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+              <!--burg--> 
+        <label for="menu" class="close">
+          <img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test" ><!-- href="">-->上クリックで隠れる</a>
+        </label> 
+           <p><br><a href="https://canape2020.stars.ne.jp/menu"><b>簡単なWeb.ページの表現</b></a> </p> 
+                  <style>li{ margin: 15px 0 10px;}</style>     
+            <nav>
+                <ul>
+                    <li><b>参考サイト▼</b></li>
+                    <li ><a href="http://www.htmq.com/style/border.shtml ">borderプロパティ</a></li>
+                    <li><a href=" http://www.htmq.com/style/table-layout.shtml">table-layoutプロパティ</a></li>
+                    <b>レイアウトテーブ▼</b>
+　　　　　　　　　　<li><a href="http://ww2019.starfree.jp/web_tip/#7">WAI-ARIAの力<br>&lt;table role="presentation"></a></li>
+                    <li><b>MDNの公式サイト▼</b></li>
+                    <li><a href=" https://developer.mozilla.org/ja/search?q=table+%E8%A6%81%E7%B4%A0 ">＜table＞: 表要素</a></li>
+                    <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/border-collapse ">border-collapse プロパティ</a></li>
+                    <li><a href=" https://developer.mozilla.org/ja/docs/Web/HTML/Element/td ">＜td＞: 表データセル要素</a></li>
+                    <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing ">border-spacing プロパティ</a></li>
+                    <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/table-layout ">table-layout プロパティ</a></li>
+                    
+                    <li><a href="https://canape2020.stars.ne.jp/tables/#2">表の例　「 私の支出 」</a></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <div>
+                @canape2020
+            </div>
+      </aside>
+<main style="background-color: lightblue;"><style>main{padding: 0 10px;}</style> 
+                                 <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^　　メイン部分　　　^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+ 
+ <hearer style="margin-bottom: 200px;">
+       <ul style="float:right;">
+       <li><input id="canape-button" type="button" onclick="location.href='https://canape2020.stars.ne.jp'" value="HOME"></li>  
+       <li><input id="canape-button" type="button" onclick="history.back()" value="直前のPage"></li>
+      </ul>
+   </hearer>
+    <h3 style="margin-left: 90px;">HTMLの表組み</h3>
+      <!-- <ul style="float:right;"><li><a href="https://canape2020.stars.ne.jp/menu.html"><b>Top Menu Page</b></a></li>  
+       <li><a href="/"><b>HOME もどる</b></a></li></ul>
+  -->
+     
+    <div> 
+    <h4><strong>&lt;table&gt; </strong></h4>
+     <dl>
+       <dt>&emsp;&lt;table border="<small>ピクセル数</small>"&gt;</dt>
+        <dd>罫線の太さを指定できる<a href="http://www.htmq.com/style/border.shtml">borderについて</a></dd>
+       <dt>&emsp;&lt;table border="<small>ピクセル数</small>"&nbsp;width="<small>数 % か px</small>"&gt;</dt>
+        <dd>表組の横幅を指定できる</dd>
+       <dt>&emsp;&lt;table border="1" width="100%" style="table-layout: auto;"&gt;</dt>
+       <dt>&emsp;&lt;table border="1" width="100%" style="table-layout: fixed;"&gt;</dt>
+        <dd><a href="http://www.htmq.com/style/table-layout.shtml">table-layoutプロパティは表の表示方法を指定</a></dd> 
+       <dt>&emsp;&lt;table border="1" width="300" cellspacing="5"＞</dt><dd>cellspacing属性をつけることで、セルとセルの間隔を任意に指定できます。属性値は0からのピクセルで指定します。属性値を2に指定した場合、cellspacingを指定しないのと同じになります</dd>
+       <dt>&emsp;&lt;table width="100" height="100" border="2" cellpadding="6"></dt><dd>cellpadding属性をつけることセルの枠から文字までの距離（余白）</dd></li> 
+               
+        </dl>
+      <h4><strong>＜table＞タグ内</strong></h4>
+      <dl>
+             <dt>＜caption＞</dt><dd>表に専用の題名・説明をつけることができる</dd>
+             <dt>＜tr＞</dt><dd>タグ横方向に行（ここからセルの表組）</dd>
+             <dt>＜th＞</dt><dd>見出しの設定ができる&emsp;太字・中央</dd>
+             <dt>＜／tr＞</dt><dd>タグで閉じたまでが一行の表となり</dd> 
+             <dt>＜th&nbsp;<small>or</small>&nbsp;td colspan="<small>右 セル数</small>"＞</dt><dd>横方向に隣り合うセルの内容が同じであれば、結合の一番左になるセルのtd要素またはth要素にcolspan属性</dd>
+             <dt>＜th&nbsp;<small>or</small>&nbsp;td rowspan="<small>下 セル数</small>"＞</dt><dd>縦方向に隣り合うセルの内容が同じであれば、結合の一番上になるセルのtd要素またはth要素にrowspan属性を指定します</dd>
+             <dt>＜td＞</dt><dd>タグで括る内容がセルとなる</dd>
+                            <dd>※＜td rowspan="2"＞ジャンル名＜/td＞タグでジャンル別行数の数値とジャンル名書くことができる</dd>
+                            <dd>※<th colspan="2">見出し名1・見出し名２</th>値が２だから見出し名も２つ</dd>
+             <dt>&lt;<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/thead">thead</a>&gt;</dt>
+                             <dd>&lt;thead&gt; 要素は、表の列の見出しを定義する行のセットを定義します</dd>
+                             <dd>ボディ[表の本体]部分&lt;tbody>〜&lt;/tbody>、フッタ部分&lt;tfoot>〜&lt;/tfoot>に分けられます</dd>
+      </dl>
+    </div>
+<div style="padding-bottom: 47em;"></div>
+ <div style="margin-top: 0px;">
+  <table style="background-color: lightblue;">
+
+   <h2>例‐私の支出記録</h2>
+<thead>
+  <tr>
+    <th scope="col"><mark>購入</mark></th>
+    <th scope="col">場所</th>
+    <th scope="col">日付</th>
+    <th scope="col">評価</th>
+    <th scope="col">コスト (&#8364;)</th>
+  </tr>
+</thead>
+      <table border="1" cellpadding="20" style="border-collapse: collapse;  width: 80%; background-color: lightblue;">
+        <caption>私が選んだお金の使い方</caption>
+        <thead>
+          <tr>
+            <th><mark>購入</mark></th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Evaluation</th>
+            <th>Cost (&#8364;)</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">SUM</td>
+            <td>118</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Haircut</td>
+            <td>Hairdresser</td>
+            <td>12/09</td>
+            <td>Great idea</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Lasagna</td>
+            <td>Restaurant</td>
+            <td>12/09</td>
+            <td>Regrets</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Shoes</td>
+            <td>Shoeshop</td>
+            <td>13/09</td>
+            <td>Big regrets</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td>Toothpaste</td>
+            <td>Supermarket</td>
+            <td>13/09</td>
+            <td>Good</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+    </table>
+
+<a href="tables/#"><b>UP Page</b></a> 
+<a id="2"> 
+<pre>--------------- Code ---------------
+&lt;table&gt;
+   &lt;h1>私の支出記録&lt;/h1>
+&lt;thead>
+  &lt;tr>
+   &lt;th scope="col"&gt;&lt;mark>購入&lt;/mark>&lt;/th>
+  　&lt;th scope="col"&gt;場所&lt;/th>
+   &lt;th scope="col"&gt;日付&lt;/th>
+    &lt;th scope="col"&gt;評価&lt;/th>
+   &lt;th scope="col">コスト (&#8364;)&lt;/th>
+  &lt;/tr>
+&lt;/thead>
+    &lt;table border="1" cellpadding="20" style="border-collapse: collapse;  width: 80%;"&gt;
+     &lt;caption>私が選んだお金の使い方&lt;/caption>
+      &lt;thead>
+         &lt;tr>
+            &lt;th>&lt;mark>購入&lt;/mark>&lt;/th>
+           &lt;th>Location&lt;/th>
+            &lt;th>Date&lt;/th>
+            &lt;th>Evaluation&lt;/th>
+            &lt;th>Cost (&#8364;)&lt;/th>
+          &lt;/tr>
+        &lt;/thead>
+     &lt;tfoot>
+          &lt;tr>
+            &lt;td colspan="4">SUM</td>
+            &lt;td>118&lt;/td>
+         &lt;/tr>
+        &lt;/tfoot>
+       &lt;tbody>
+         &lt;tr>
+            &lt;td>Haircut&lt;/td>
+            &lt;td>Hairdresser&lt;/td>
+            &lt;td>12/09&lt;/td>
+           &lt;td>Great idea&lt;/td>
+            &lt;td>30&lt;/td>
+         &lt;/tr>
+          &lt;tr>
+          &lt;td>Lasagna&lt;/td>
+            &lt;td>Restaurant&lt;/td>
+            &lt;td>12/09&lt;/td>
+            &lt;td>Regrets&lt;/td>
+            &lt;td>18&lt;/td>
+          &lt;/tr>
+          &lt;tr>
+            &lt;td>Shoes&lt;/td>
+            &lt;td>Shoeshop&lt;/td>
+            &lt;td>13/09&lt;/td>
+            &lt;td>Big regrets&lt;/td>
+            &lt;td>65&lt;/td>
+          &lt;/tr>
+          &lt;tr>
+            &lt;td>Toothpaste&lt;/td>
+            &lt;td>Supermarket&lt;/td>
+            &lt;td>13/09&lt;/td>
+            &lt;td>Good&lt;/td>
+            &lt;td>5&lt;/td>
+          &lt;/tr>
+        &lt;/tbody>
+    &lt;/table>
+</pre>
+<a href="tables/#"><b>UP Page</b></a>
+= MDN 公式サイト=  <br>
+https://developer.mozilla.org/ja/search?q=table+%E8%A6%81%E7%B4%A0  <br>   
+    
+https://developer.mozilla.org/ja/docs/Web/CSS/border-collapse   <br>
+
+https://developer.mozilla.org/ja/docs/Web/HTML/Element/th#attr-scope   <br>
+
+https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Styling_tables   <br>
+
+https://developer.mozilla.org/ja/docs/Web/HTML/Element/tbody   <br>
+
+https://developer.mozilla.org/ja/docs/Web/HTML/Element/td     <br>
+
+https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing    <br>
+
+https://developer.mozilla.org/ja/docs/Web/CSS/table-layout   <br>
+<br>
+</div>
+ </main>
+    </body>
+</html>
