@@ -5,7 +5,7 @@ body {
     display: flex;
     font-size: 1rem;
     min-height: 100vh;  /*100段階に分ける*/
-    max-width:900px;             /* width: max-content; */
+    max-width:800px;             /* width: max-content; */
 }
 main {
     width: auto;
