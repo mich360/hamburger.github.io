@@ -51,7 +51,7 @@ input[type="checkbox"] {
 }
 /*burg*/
 
-@media screen and (max-width: 900px) {    /*画面が数値ピクセル以下に設定 元のデバイス以下にするとスマホで見れない*/
+@media screen and (max-width: 1300px) {    /*画面が数値ピクセル以下に設定 元のデバイス以下にするとスマホで見れない*/
     main {
         width: 700px;
         padding-top: 50px;
