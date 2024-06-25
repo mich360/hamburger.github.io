@@ -7,14 +7,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">  
    <link rel="stylesheet" href="style.css"> 
-   <!-- <link rel=”stylesheet” href=”https://mich360.github.io/hamburger.github.io/style.css -->
    <style>
       #canape-button {
       width: 100px;
       height: 27px;
       font-size: 14px;
       background-color: #0000CC;
-      font-family: cursive; 
+      font-family:"MS Pゴシック",sans-serif;
       color: #ffff80;
       border-style: solid;
       border-color: #ffff80;
@@ -25,15 +24,15 @@
    <title>HTMLの表組み</title>
   <base href="https://canape2020.stars.ne.jp" target="_self"><!--https://github.com/lightsound/html-css-class/tree/master/003_Sidebar-->
 </head>
- <body style="background-color: #ccc;">
+ <body>
+  
   
    <!--burg-->
         <input id="menu" type="checkbox" />
-        <label for="menu" class="open"><img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test"><!-- href="">-->
-            &emsp;上のメニューで開く</a></label> <!--<b>&emsp;?</b>-->
+        <label for="menu" class="open"><img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test">上のメニューで開く</a></label> 
         <label for="menu" class="back" ></label> 
- 
-  <aside style="height: auto; background-color: lightblue;">　<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^＾隠れているasieファイル＾^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+      
+  <aside>　<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^＾隠れているasieファイル＾^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
               <!--burg--> 
         <label for="menu" class="close">
           <img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test" ><!-- href="">-->上クリックで隠れる</a>
@@ -62,16 +61,18 @@
                 @canape2020
             </div>
       </aside>
-<main style="background-color: lightblue;"><style>main{padding: 0 10px;}</style> 
+      
+<main>
                                  <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^　　メイン部分　　　^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+  <header>
+  <h1> メニューの表示/非表示</h1>
+        <nav>
+        <input id="canape-button" type="button" onclick="location.href='https://canape2020.stars.ne.jp'" value="HOME">
+        <input id="canape-button" type="button" onclick="history.back()" value="直前のPage">
+        </nav>
+  </header>
  
- <hearer style="margin-bottom: 200px;">
-       <ul style="float:right;">
-       <li><input id="canape-button" type="button" onclick="location.href='https://canape2020.stars.ne.jp'" value="HOME"></li>  
-       <li><input id="canape-button" type="button" onclick="history.back()" value="直前のPage"></li>
-      </ul>
-   </hearer>
-    <h1> メニューの表示/非表示</h1>
+   
    <p>画面幅が1300ピクセル以下のデバイスに適用される左メニューが隠れるスタイルを指定します、
    横幅を1300ピクセル以下にしてください。</p>
 
