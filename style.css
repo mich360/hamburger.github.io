@@ -1,97 +1,101 @@
+@charset "UTF-8";
+
 body {
-    background-color: lightblue;
-    //background-color: #F0FFFF;
+    background-color: rgb(239, 244, 246);
     margin: 10px;
     display: flex;
     font-size: 1rem;
-    min-height: 100vh;  /*100段階に分ける*/
-    max-width:800px;            
+    min-height: 100vh;  
+    max-width: 800px;
 }
+header{
+    margin-top: 20px;
+}
+
 main {
+    background-color: rgb(239, 244, 246);
     width: auto;
-    margin: 0 auto;    /*真ん中に寄る*/
- 
-    
-    /* flex: 1; */
+    margin: 0 auto;
 }
+
 aside {
-   
-    width: 20%;          /*数値増やすと右隠れが　はみ出る*/
-    min-width: 250px;       /*最低でも250px担保される*/
+    background-color: rgb(239, 244, 246);
+    width: 20%;
+    min-width: 24s0px;
     display: flex;
-    flex-direction: column;  /*横並びを縦にした*/
+    flex-direction: column;
     padding-left: 12px;
-   
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-   // background-color: #E0FFFF;
-}
-li{
-   margin: 15px 0 10px;
-}
-div {
-    margin-top: auto;    /*上に空ける幅があればその分全部空ける*/
-    height: 100px;
-   // background-color: #E0FFFF;
 }
 
-/*burg*/
+li {
+    margin: 15px 0 10px;
+}
+
+div {
+    margin-top: auto;
+    height: 100px;
+}
+
 .open,
 .close {
     display: none;
 }
+
 input[type="checkbox"] {
     position: absolute;
     left: -50vw;
-    
 }
-/*burg*/
 
-@media screen and (max-width: 1300px) {    /*画面が数値ピクセル以下に設定 元のデバイス以下にするとスマホで見れない*/
+@media screen and (max-width: 1300px) {
     main {
         width: 700px;
         padding-top: 50px;
     }
-    /*burg*/
-.open,
-.close{
-    display: block;
+
+    .open,
+    .close {
+        display: block;
     }
-.open{
-    position: absolute;
+
+    .open {
+        position: absolute;
     }
-aside {
-      position: absolute;       
-      left: -250px;
-      height: 100%;
-      transition: all 0.2s;
-      background: #ffffff;
+
+    aside {
+        position: absolute;
+        left: -250px;
+        height: 100%;
+        transition: all 0.2s;
+        background: #ffffff;
     }
-input[type="checkbox"]:checked ~ aside {
+
+    input[type="checkbox"]:checked ~ aside {
         left: 0;
     }
-input[type="checkbox"]:checked ~ .back {
+
+    input[type="checkbox"]:checked ~ .back {
         position: absolute;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5) !important;
     }
-
 }
 
-.btn_test {  
-    font-size: x-small;                           /*ウエルカムページ移動ボタンとして 32行目*/
-    display:  block;            			/* ブロック要素にする */
-    color:  #fff;               			/* 文字の色指定 */
-    background-color: #87CEFA;     			/* 背景色指定 */
-    padding:  5px ;             			/* 余白指定 */
-    text-align: left;        			/* 文字をcenter中央揃えに */
-    text-decoration:  none;     			/* 文字の装飾を無くす */
-    border-radius:  0 0 15px 15px;        			/* 角丸指定 */
-    width:  124px;              			/* 幅指定 */
-    box-shadow: 0px 2px 3px 0px #9E9E9E;	/* 影をつける */
+.btn_test {
+    font-size: small;
+    display: block;
+    color: #0000CC;
+    background-color: #87CEFA;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 0 0 15px 15px;
+    width: 124px;
+    box-shadow: 0px 2px 3px 0px #9E9E9E;
 }
