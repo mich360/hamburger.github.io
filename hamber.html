@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="ham.css"> <!-- CSSファイルをリンク -->
+</head>
+<body>
+    <button class="btn_test">メニュー</button>
+
+    <!-- メニューを開くボタン -->
+    <label for="menu-toggle" class="open">&#9776; Open</label>
+    
+    <!-- チェックボックスは非表示にして、クリックでメニューを開く -->
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+
+    <main>
+        <h1>コンテンツエリア</h1>
+        <p>ここにメインコンテンツが入ります。</p>
+    </main>
+
+    <!-- サイドメニュー -->
+    <aside>
+       <label for="menu" class="close">
+         <img src="https://canape2020.stars.ne.jp/img/b_menu .png" alt="メニューバー"><a class="btn_test" ></a>
+       </label> 
+    
+                 <!-- <style>li{ margin: 15px 0 10px;}</style>      -->
+           <nav>
+               <ul>
+                  <li><br><a href="https://canape2020.stars.ne.jp/menu"><b>Home</b></a></li>
+                   <li><b>参考サイト▼</b></li>
+                   <li ><a href="">borderプロパティ</a></li>
+                   <li><a href="">table-layoutプロパティ</a></li>
+                   <b>レイアウトテーブ▼</b>
+                   <li><a href="http://ww2019.starfree.jp/web_tip/#7">WAI-ARIAの力<br>&lt;table role="presentation"></a></li>
+                   <li><b>MDNの公式サイト▼</b></li>
+                   <li><a href=" https://developer.mozilla.org/ja/search?q=table+%E8%A6%81%E7%B4%A0 ">＜table＞: 表要素</a></li>
+                   <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/border-collapse ">border-collapse プロパティ</a></li>
+                   <li><a href=" https://developer.mozilla.org/ja/docs/Web/HTML/Element/td ">＜td＞: 表データセル要素</a></li>
+                   <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing ">border-spacing プロパティ</a></li>
+                   <li><a href=" https://developer.mozilla.org/ja/docs/Web/CSS/table-layout ">table-layout プロパティ</a></li>
+                   
+                   <li><a href="https://canape2020.stars.ne.jp/tables/#2">表の例　「 私の支出 」</a></li>
+                   <li></li>
+               </ul>
+           </nav>
+           <div>
+               @canape2020
+           </div>
+    </aside>
+
+    <!-- 背景のオーバーレイ -->
+    <div class="back"></div>
+
+    <script src="script.js"></script> <!-- 必要に応じてJSファイル -->
+</body>
+</html>

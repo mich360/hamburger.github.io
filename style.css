@@ -52,7 +52,7 @@ input[type="checkbox"] {
     left: -50vw;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1920px) {
     main {
         width: 700px;
         padding-top: 50px;
@@ -61,6 +61,7 @@ input[type="checkbox"] {
     .open,
     .close {
         display: block;
+        padding-left: 28px;
     }
 
     .open {
